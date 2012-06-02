@@ -1,0 +1,13 @@
+{% load crispy_forms_tags %}
+
+<div id="comments" class="comments" data-comment-block=".comment">
+    {% for object in comments %}
+    {% include "c0mments/comment.html" %}
+    {% endfor %}
+</div>
+<form id="comment-form" class="uniForm c0mment-form" method="POST">{% csrf_token %}
+    {{ form|crispy }}
+    <div class="buttonHolder">
+        <input class="primaryAction" type="submit" value="Отправить">
+    </div>
+</form>
