@@ -1,8 +1,182 @@
 textarea[name='comment'] {
-    width: 300px;
-    height: 50px;
+    width: 450px;
+    height: 130px;
+    border-radius: 5px;
+	width:400px;
+    background: rgb(247, 247, 247);
+    border: none;
+    box-shadow:
+        0pt 2px 5px rgba(105, 108, 109,  0.5),
+        0px 0px 8px 5px rgba(208, 223, 226, 0.1) inset;
+    padding: 15px;
 }
 
-.c0mment-form{
-    width: 350px;
+.text-field{
+    padding: 20px 0px 40px 190px;
 }
+
+label[for='id_comment'] {
+    display: none;
+}
+
+.address-panel{
+
+    margin: -32px 0px 0px 55px;
+    width: 710px;
+    height:47px;
+    background-image: url('../img/address_panel.png');
+}
+
+.brand-comments{
+    padding: 8px 0px 0px 0px;
+    font-family: calibri;
+    color: #555555;
+    text-align: center;
+}
+
+
+.shops-panel{
+    height: 121px;
+	background-image: url('../img/pod_panel.png');
+    margin: -20px -32px 20px -32px;
+    padding: 0px 0px 0px 0px;
+}
+
+.shop-label{
+    padding: 30px 0px 10px 30px;
+}
+
+.shop-name{
+    height:69px;
+    padding: 2px 0px 0px 0px;
+    text-align: center;
+}
+
+.text{
+    font-family: "calibri", "MS Trebuchet", sans-serif;
+    cursor: pointer;
+}
+
+.text a:hover{
+    color: #ee5a20;
+}
+
+.shop-button{
+    width:233px;
+    height: 69px;
+    background-image: url('../img/button_mag.png');
+}
+
+.send{
+	padding: 10px 0px 0px 55%;
+}
+
+.comments{
+    background-image: url('../img/com_panel.png');
+    margin: -20px -32px 20px -32px;
+    padding: 5px 0px 15px 5px;
+}
+
+.comment-header{
+    padding: 20px 0px 10px 20px;
+    width: 200px;
+}
+
+.comment-author{
+    font: 100% "calibri", "Trebuchet MS", Verdana, sans-serif;
+    color: #ee5a20;
+}
+
+.comment-date{
+    font: 75% "calibri", "Trebuchet MS", Verdana, sans-serif;
+    float:right; 
+    padding-right:30px;
+    color: #666666;
+}
+
+.comment-text{
+    padding: 0px 100px 10px 20px;
+    color: #444444;
+}
+
+.comment-reply{
+    padding: 0px 0px 10px 20px;
+}
+
+.comment-reply-text{
+    font: 75% "calibri", "Trebuchet MS", Verdana, sans-serif;
+    color: #555555;
+}
+
+.comment-reply-text:visited{
+    font: 75% "calibri", "Trebuchet MS", Verdana, sans-serif;
+    color: #555555;
+}
+
+.comment-reply-text:hover{
+    font: 75% "calibri", "Trebuchet MS", Verdana, sans-serif;
+    color: red;
+}
+
+
+.errorField{
+    color: #555555;
+    font: 90% "calibri", "Trebuchet MS", Verdana, sans-serif;
+}
+
+/*Анимированная кнопка*/
+#button2 {
+  background: #f95314;
+  border: 2px solid #eee;
+  height: 38px;
+  width: 429px;
+  margin: 10px 0 0 0;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+
+/*Скругленные углы*/
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+
+/*Градиент*/
+background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+
+/*Тень*/
+-webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+
+/*Переход*/
+-webkit-transition: All 0.5s ease;
+-moz-transition: All 0.5s ease;
+-o-transition: All 0.5s ease;
+-ms-transition: All 0.5s ease;
+transition: All 0.5s ease;
+
+cursor: pointer;
+
+}
+
+#button2:hover {
+ background-color: #38d255;
+}
+
+.buttonText{
+    font: 110% "calibri", "Trebuchet MS", Verdana, sans-serif;
+    color: #f1f1f1;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
