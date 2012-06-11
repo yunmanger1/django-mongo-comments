@@ -1,13 +1,17 @@
 {% load crispy_forms_tags %}
 
-<div id="comments" class="comments" data-comment-block=".comment">
+<div class="address-panel"><h3 class="brand-comments">Комментарии к данному бренду.</h3></div>
+<form id="comment-form" class="text-field" method="POST">{% csrf_token %}
+    {{ form|crispy }}
+    <div>
+        <!-- <input class="send" type="image" src="{{ STATIC_URL }}c0mments/img/send.png" value="Отправить"> -->
+        <input type="submit" class="buttonText" id="button2" value="Отправить свой отзыв">
+    </div>
+</form>
+
+
+<div id="comments" data-comment-block=".comment">
     {% for object in comments %}
     {% include "c0mments/comment.html" %}
     {% endfor %}
 </div>
-<form id="comment-form" class="uniForm c0mment-form" method="POST">{% csrf_token %}
-    {{ form|crispy }}
-    <div class="buttonHolder">
-        <input class="primaryAction" type="submit" value="Отправить">
-    </div>
-</form>

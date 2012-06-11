@@ -1,7 +1,23 @@
+    
+
+
+
     <div id="{{ object.pk }}" style="margin-left: {{ object.indent|default:0 }}px;" class="comment" data-comment-pk="{{ object.pk }}" data-comment-reply=".comment-reply a">
-        <div class="comment-header"><span class="comment-author">{{ object.user }}</span> <span class="comment-date">{{ object.submit_date|timesince }} назад</span></div>
+        
+    <div class="comments">
+      
+        <div class="comment-header">
+        	<span class="comment-author">{{ object.user }}</span> 
+        	
+        </div>
+        
         <div class="comment-text">
             {{ object.comment|linebreaksbr }}
         </div>
-        <div class="comment-reply"><a href="javascript:void(0);">Ответить</a></div>
+        
+        <div class="comment-date"><span >{{ object.submit_date|timesince }} назад</span></div>
+
+        <div class="comment-reply"><a class="comment-reply-text" href="javascript:void(0);">Ответить</a></div>
+    </div>
+
     </div>
